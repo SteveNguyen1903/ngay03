@@ -6336,7 +6336,33 @@ header .navbar-brand img {
 footer img {
   max-width: 200px; }
 
-body {
-  font-family: Roboto; }
+.home-slider {
+  min-height: 300px;
+  background: #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0; }
+  .home-slider ul li a {
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    background: #ffffff;
+    width: 2rem;
+    transition: .3s all ease-in-out; }
+  .home-slider ul li:hover a, .home-slider ul li:active a {
+    background: #000000;
+    color: #ffffff; }
+  @media (min-width: 576px) {
+    .home-slider {
+      background: #9b59b6; } }
+  @media (min-width: 768px) {
+    .home-slider {
+      background: #2ecc71; } }
+  @media (min-width: 992px) {
+    .home-slider {
+      background: #f1c40f; } }
 
 /*# sourceMappingURL=main.css.map */

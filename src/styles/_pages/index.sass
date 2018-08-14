@@ -1,2 +1,29 @@
-body
-	font-family: Roboto
+.home-slider
+	min-height: 300px
+	background: $sen
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	padding: 2rem 0
+	ul
+		li
+			a
+				display: block
+				height: 2rem
+				line-height: 2rem
+				border-radius: 50%
+				background: #ffffff
+				width: 2rem
+				transition: .3s all ease-in-out
+			&:hover,
+			&:active
+				a
+					background: #000000
+					color: #ffffff
+	+media-breakpoint-up(sm)
+		background: $amethyst
+	+media-breakpoint-up(md)
+		background: $emerald
+	+media-breakpoint-up(lg)
+		background: $sun-flower
