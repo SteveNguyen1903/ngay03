@@ -5,56 +5,48 @@ block variables
 	- var description = 'Description for home page'
 	- var bodyclass = 'home'
 
+mixin social_contact(link1,link2,link3)
+	.team_social_icon
+		ul.list-inline
+			li.list-inline-item
+				a(href=link1)
+					i.fa.fa-facebook
+			li.list-inline-item
+				a(href=link2)
+					i.fa.fa-twitter
+			li.list-inline-item
+				a(href=link3)
+					i.fa.fa-google
+
 block body
 	section.home-slider
 		.container
 			.row
 				.col-sm-6.col-md-3
 					h1 fwfaewf fwef awef wf aw fweafew
-					ul.list-inline
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-facebook
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-twitter
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-google
+					+social_contact("#","#","#")
 				.col-sm-6.col-md-3
 					h1 fwfaewf fwef awef wf aw fwfaew
-					ul.list-inline
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-facebook
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-twitter
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-google
+					+social_contact("#","#","#")
 				.col-sm-6.col-md-3
 					h1 fwfaewf fwef awef wf aw fewafewfeaw
-					ul.list-inline
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-facebook
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-twitter
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-google
+					+social_contact("#","#","#")
 				.col-sm-6.col-md-3
 					h1 fwfaewf fwef awef wf aw fwfawfew
-					ul.list-inline
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-facebook
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-twitter
-						li.list-inline-item
-							a(href="#")
-								i.fa.fa-google
+					+social_contact("#","#","#")
 
+	section.home_service
+		.container
+			.row
+				- for(x = 1; x < 5; x++)
+					.col-md-3.col-xs-6
+						img(src="./img/home_icon_"+x+".png", alt="")
+						h2 fewafew
+						- if(x == 1)
+							p fweafewwe
+						- else if(x == 2)
+							p fweafewaewefw
+						- else if(x == 3)
+							p fewfaew
+						- else
+							p fwefaeef
